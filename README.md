@@ -1,4 +1,13 @@
-# React + Vite
+# coinium.
+npm packages used :-
+1. react-redux @reduxjs/toolkit
+2. antd (for design)
+3. @ant-design/icons (for icon)
+4. axios (to fetch API)
+5. chart.js react-chartjs-2 (for graphs nd chart)
+6. millify
+7. moment
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
