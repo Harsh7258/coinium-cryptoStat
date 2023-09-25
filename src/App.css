@@ -1,3 +1,5 @@
+
+
 :root{
    --text-primary:#000;
    --bgPrimary:#fff;
@@ -304,6 +306,11 @@ width: 70%;
 .news-image-container .img{
     width:100px;
     height:100px;
+}
+.news-image-in{
+    border-radius: 10%;
+    width: 37%;
+    height: 37%;
 }
 .news-card p{
     color: black;
