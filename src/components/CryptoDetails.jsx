@@ -7,6 +7,7 @@ import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCi
 
 import { useGetCryptosDetailsQuery } from '../services/cryptoAPI';
 import { useGetCryptosHistoryQuery } from '../services/cryptoAPI';
+import Spinner from './spinner/Spinner';
 
 import LineChart from './LineChart';
 
@@ -24,11 +25,9 @@ const CryptoDetails = () => {
     //  const [crypto, setCrypto] = useState(null);
     //  useEffect(() => {
     //     setCrypto(cryptoDetails)
-        console.log(data);
-        console.log(coinHistory);
     //  }, [])
 
-    if(isFetching) return 'Loading...'
+    if(isFetching) return <Spinner />
 
     const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 

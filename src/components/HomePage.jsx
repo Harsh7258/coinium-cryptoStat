@@ -4,6 +4,7 @@ import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
 import { useGetCryptosQuery } from '../services/cryptoAPI';
 import {CryptoCurrencies, News} from './index';
+import Spinner from './spinner/Spinner';
 
 const { Title } = Typography;
 
@@ -13,7 +14,7 @@ const HomePage = () => {
 
     const globalStats = data?.data?.stats;
 
-    if(isFetching) return 'Loading....'
+    if(isFetching) return <Spinner />
 
     console.log(data);
 

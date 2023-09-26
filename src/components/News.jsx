@@ -4,6 +4,7 @@ import moment from 'moment/moment';
 
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 import { useGetCryptosQuery } from '../services/cryptoAPI';
+import Spinner from './spinner/Spinner';
 
 const demoImage = 'https://unsplash.com/photos/ga6Z0F2bbuI';
 
@@ -17,7 +18,7 @@ const News = ({ simplified }) => {
   const { data: cryptoNews} = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 8 : 16 });
   const { data } = useGetCryptosQuery(100);
 
-  if(!cryptoNews?.value) return 'Loading...';
+  if(!cryptoNews?.value) return <Spinner/>;
 
   console.log(cryptoNews);
 
