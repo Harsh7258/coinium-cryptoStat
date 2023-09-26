@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import HTMLReactParser from 'html-react-parser';
 import { useParams } from 'react-router-dom';
 import millify from 'millify';
@@ -21,6 +21,9 @@ const CryptoDetails = () => {
     const { data: coinHistory } = useGetCryptosHistoryQuery({coinId, timePeriod});
 
      const cryptoDetails = data?.data?.coin;
+
+    //  console.log(data);
+    //  console.log(coinHistory);
 
     //  const [crypto, setCrypto] = useState(null);
     //  useEffect(() => {

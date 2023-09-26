@@ -20,7 +20,7 @@ const News = ({ simplified }) => {
 
   if(!cryptoNews?.value) return <Spinner/>;
 
-  console.log(cryptoNews);
+  // console.log(cryptoNews);
 
     return (
         <Row gutter={[24, 24]}>

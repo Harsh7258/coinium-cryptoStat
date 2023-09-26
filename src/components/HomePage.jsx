@@ -16,7 +16,7 @@ const HomePage = () => {
 
     if(isFetching) return <Spinner />
 
-    console.log(data);
+    // console.log(data);
 
     return (
         <>
