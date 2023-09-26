@@ -5,8 +5,9 @@
    --bgPrimary:#fff;
    --bgSecondary: #F9F9F9;
    --pink: #f9c904;
-   --light-blue: #e6f7ff;
+   --light-blue: #44a2cd;
    --border: #d9d9d9;
+   --text-gray: rgb(104, 103, 103);
 }
 
 * {
@@ -58,6 +59,11 @@ a:hover{
 }
 .logo a{
    color: white;
+}
+.color-text{
+    color: var(--pink);
+    font-weight: bolder;
+    font-stretch: expanded;
 }
 .menu-control-container{
     display: none !important;
@@ -176,9 +182,9 @@ a:hover{
 }
 
 .coin-details-heading{
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     margin-top: 20px !important;
-    color: var(--pink) !important;
+    color: var(--text-gray) !important;
 }
 
 .coin-stats{
@@ -224,7 +230,7 @@ a:hover{
 }
 
 .coin-desc-link a{
-    color: var(--pink);
+    color: var(--light-blue);
 }
 
 .coin-desc-link h3{
@@ -254,7 +260,7 @@ a:hover{
 }
 
 .coin-link a{
-    color: var(--pink);
+    color: var(--light-blue);
     font-weight: 700;
     font-size: 1rem;
 }

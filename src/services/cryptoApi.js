@@ -16,9 +16,12 @@ export const cryptoApi = createApi({
       query: (count) => createRequest(`/coins?limit=${count}`),
       // count used to set limit of 10
     }),
+    getCryptosDetails: builder.query({
+      query: (coinId) => createRequest(`/coin/${coinId}`),
+     }),
   }),
 });
 
 export const  {
-    useGetCryptosQuery
+    useGetCryptosQuery, useGetCryptosDetailsQuery
 } = cryptoApi;
